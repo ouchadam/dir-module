@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id "com.github.ouchadam.todo"
+}
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+    }
+}
+
+dirModule {
+    android("fixtures") {
+        dependencies {
+            implementation project(":common")
+        }
+    }
+}

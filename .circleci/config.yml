@@ -1,0 +1,46 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/code
+    docker:
+    - image: circleci/android:api-30
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+    - checkout
+    - restore_cache:
+        key: jars-{{ checksum "build.gradle" }}-{{ checksum  "dirmodule/build.gradle" }}
+    - run:
+        name: Download Dependencies
+        command: ./gradlew androidDependencies
+    - save_cache:
+        paths:
+        - ~/.gradle
+        key: jars-{{ checksum "build.gradle" }}-{{ checksum  "dirmodule/build.gradle" }}
+    - run:
+        name: Build Plugin
+        command: ./gradlew dirmodule:build
+
+  publish:
+    working_directory: ~/code
+    docker:
+    - image: circleci/android:api-30
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+    - checkout
+    - run:
+        name: Publish
+        command: ./gradlew clean dirmodule:build
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+    - build
+  publish:
+    jobs:
+      - publish:
+          filters:
+            branches:
+              only: main

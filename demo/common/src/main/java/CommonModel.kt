@@ -1,0 +1,1 @@
+data class CommonModel(val a: String, val b: String)

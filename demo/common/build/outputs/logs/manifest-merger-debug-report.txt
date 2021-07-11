@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml:2:1-49
+INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml:2:1-49
+INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml:2:1-49
+	package
+		ADDED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml:2:11-47
+		INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+		INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml:2:1-49
+uses-sdk
+INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+		ADDED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+		INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+		ADDED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
+		INJECTED from /home/adam/dev/adam/export-sourceset/demo/common/src/main/AndroidManifest.xml
